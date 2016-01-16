@@ -5,6 +5,7 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/funcs.js"></script>
 	<!--Import Google Icon Font-->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--Import materialize.css-->
@@ -26,13 +27,20 @@
             font-family: "Roboto Condensed", sans-serif;
         }
 
+        #links.pos-fixed {
+            position: fixed;
+            top: 10px;
+            bottom: auto;
+        }
+
         #links {
             position: absolute;
             bottom: 5px;
             right: 15%;
-            z-index: 1;
+            z-index: 2;
             padding: 3px;
             max-width: 100%;
+            vertical-align: middle;
         }
 
         #links ul li {
@@ -40,18 +48,22 @@
         }
 
         #links ul {
-            width: 100%;
             margin: 10px auto;
-            display: inline-block;
+            display: inline;
             text-align: center;
         }
 
         #links a {
-            padding: 15px 6px;
+            padding: 10px 6px;
             text-transform: uppercase;
             color: #727272;
             font-weight: 700;
             font-family: "Roboto", sans-serif;
+            vertical-align: middle;
+        }
+
+        #links a.btn-flat {
+            padding: 0 6px;
         }
 
         #links a:hover {
@@ -91,17 +103,21 @@
 <script type="application/javascript">
     $(document).ready(function(){
         $('.parallax').parallax();
+        float_tops();
     });
 </script>
 <div style="position: relative">
     <div class="parallax-container">
         <div class="parallax"><img src="img/vt_buildings.jpg" width="100%"></div>
     </div>
-    <div id="links" class="card-panel z-depth-2"><ul>
-        <li><a href="/roads/photos">Road Photos</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Other Projects</a></li>
-    </ul></div>
+    <div id="links" class="float-top card-panel z-depth-2">
+        <a class="waves-effect waves-teal btn-flat"><i class="material-icons">menu</i></a>
+        <ul>
+            <li><a href="/roads/photos">Road Photos</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Other Projects</a></li>
+        </ul>
+    </div>
 </div>
 <div class="container">
 <div id="info-card" class="card">
