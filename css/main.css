@@ -1,0 +1,43 @@
+.dark-primary-color    { background: #00796B; }
+.default-primary-color { background: #009688; }
+.light-primary-color   { background: #B2DFDB; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #FF9800; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #727272; }
+.divider-color         { border-color: #B6B6B6; }
+
+a {
+    color: #009688;
+}
+a:hover {
+    color: #ff9800;
+}
+a:active {
+    color: white;
+}
+
+h1 {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.icon-bullet {
+    line-height: 20px;
+}
+
+li.row:hover {
+    background-color: #b2dfdb;
+    opacity: 40;
+    cursor: pointer;
+}
+
+li.icon-bullet {
+    font-weight: 800;
+    margin: 5px;
+}
+
+.icon-bullet i.material-icons, .icon-bullet img
+{
+    vertical-align: middle;
+    margin-right: 10px;
+}

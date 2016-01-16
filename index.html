@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Under Construction!</title>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style type="text/css">
+        #info-card {
+            position: relative;
+            bottom: 200px;
+            z-index: 1;
+            width: 45%;
+        }
+
+        #links {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            z-index: 1;
+            padding: 3px;
+            max-width: 100%;
+        }
+
+        #links ul li {
+            display: inline-block;
+        }
+
+        #links ul {
+            width: 100%;
+            margin: 10px auto;
+            display: inline-block;
+            text-align: center;
+        }
+
+        #links a {
+            padding: 15px 6px;
+            text-transform: uppercase;
+            color: #727272;
+        }
+
+        #links a:hover {
+            background-color: #B2DFDB;
+        }
+        
+        @media screen and (max-width: 992px) {
+            #info-card {
+                width: 100%;
+            }
+
+            #links {
+                bottom: auto;
+                top: 10px;
+                right: 10px;
+                left: 10px;
+                width: 60%;
+            }
+        }
+
+        @media screen and (max-width: 640px) {
+            #links {
+                top: 10px;
+                width: auto;
+                margin: 0 auto;
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<script type="application/javascript">
+    $(document).ready(function(){
+        $('.parallax').parallax();
+    });
+</script>
+<div style="position: relative">
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/vt_buildings.jpg" width="100%"></div>
+    </div>
+    <div id="links" class="card-panel"><ul>
+        <li><a href="/roads/photos">Road Photos</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Other Projects</a></li>
+    </ul></div>
+</div>
+<div class="container">
+<div id="info-card" class="card">
+    <div class="card-content">
+        <span class="card-title icon-bullet"><i class="medium material-icons">person</i>Wes A. Jordan</span>
+        <hr>
+        <ul>
+            <li class="icon-bullet"><i class="small material-icons">location_city</i><span>Newport News / Blacksburg, VA</span></li>
+            <li class="icon-bullet"><i class="small material-icons">school</i><span>Virginia Tech (2015 - pres)</span></li>
+            <li class="icon-bullet">
+                <i class="small material-icons">contact_mail</i>
+                <span><a href="mailto: wes@wesj.org">wes@wesj.org</a></span>
+            </li>
+            <li class="icon-bullet">
+                <i><img src="octocat.svg" height="30" width="30"/></i>
+                <span><a href="https://github.com/Thing342">thing342 @ GitHub</a></span>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+</body>
+</html>
