@@ -41,3 +41,17 @@ li.icon-bullet {
     vertical-align: middle;
     margin-right: 10px;
 }
+
+footer.page-footer {
+    background-color: #009688;
+    box-shadow: 0 -5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    z-index: 1;
+}
+
+footer.page-footer h5 {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+footer.page-footer a:hover {
+    background-color: #00766b;
+}
