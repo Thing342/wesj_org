@@ -797,7 +797,7 @@ file_uploads = On
 
 ; Maximum allowed size for uploaded files.
 ; http://php.net/upload-max-filesize
-upload_max_filesize = 2048M
+upload_max_filesize = 50M
 
 ; Maximum number of files that can be uploaded via a single request
 max_file_uploads = 20
@@ -1865,7 +1865,5 @@ extension=pdo_sqlite.so
 extension=pdo_pgsql.so
 
 zend_loader.disable_licensing=0
-extension=http.so
-extension=oauth.so
 zend_extension=/usr/php/56/usr/lib64/php/modules/ZendGuardLoader.so
 zend_extension=/usr/php/56/usr/lib64/php/modules/opcache.so

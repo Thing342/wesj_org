@@ -1,0 +1,2 @@
+# Use PHPBETACGI as default
+AddHandler fcgidbeta-script .php
